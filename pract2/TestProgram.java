@@ -4,7 +4,7 @@ package pract2;
  * Clase programa para probar todas las figuras definidas.
  * También se puede hacer una ejecución parecida utilizando
  * el <B>workbench</B> del BlueJ.
- * @author IIP 
+ * @author Cux y Dani
  * @version Práctica 2 - Curso 2023/24
  */
 public class TestProgram {
