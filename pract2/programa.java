@@ -4,7 +4,7 @@ package pract2;
 /**
  * My attempt at a program that will draw a beautiful world.
  * 
- * @author (Dani) 
+ * @author (Dani Torres González) 
  * @version (0.1)
  */
 public class programa{
