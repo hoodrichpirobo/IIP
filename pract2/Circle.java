@@ -3,7 +3,7 @@ package pract2;
 /** 
  * Clase Circle: define un círculo de un determinado radio, color y
  * posición de su centro, con la funcionalidad que aparece a continuación.
- * @author IIP 
+ * @author Cux y Dani 
  * @version Práctica 2 - Curso 2023/24
  */ 
 public class Circle {
