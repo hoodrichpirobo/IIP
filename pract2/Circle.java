@@ -1,91 +1,91 @@
 package pract2;
- 
+
 /** 
- * Class Circle: defines a circle of a given radius, color, center position,
- * with the following functionalities.
- * @author IIP
- * @version Academic year 2023/2024
+ * Clase Circle: define un círculo de un determinado radio, color y
+ * posición de su centro, con la funcionalidad que aparece a continuación.
+ * @author Cux y Dani 
+ * @version Práctica 2 - Curso 2023/24
  */ 
-public class Circle  {
+public class Circle {
     private double radius; 
     private String color;
     private int centerX, centerY;   
     
-    /** Create a Circle of radius 50, black and center in (100,100). */
+    /** Crea un Circle de radio 50, negro y centro en (100,100). */
     public Circle() {
-        radius = 50; 
+        radius = 50;
         color = "black"; 
         centerX = 100;  
         centerY = 100; 
     }
     
-    /** Create a Circle of radius r, color c and center in (cx,cy). 
-     *  @param r double the radius. 
-     *  @param col String the color.
-     *  @param cx int the abscissa of the center.
-     *  @param cy int the ordenate of the center.  
+    /** Crea un Circle de radio r, color c y centro en (cx,cy). 
+     *  @param r double que representa el radio. 
+     *  @param col String que representa el color.
+     *  @param cx int que representa la abscisa del centro.
+     *  @param cy int que representa la ordenada del centro.
      */
     public Circle(double r, String col, int cx, int cy) {
         radius = r;  
         color = col; 
         centerX = cx; 
-        centerY = cy; 
+        centerY = cy;         
     }
 
-    /** Return radius of Circle. 
-     *  @return double, the radius.  
+    /** Devuelve el radio del Circle. 
+     *  @return double, el radio. 
      */
     public double getRadius() { return radius; }    
 
-    /** Return color of Circle.
-     *  @return String, the color.   
+    /** Devuelve el color del Circle.
+     *  @return String, el color.  
      */
     public String getColor() { return color; }  
 
-    /** Return abscissa of the center of Circle. 
-     *  @return int, the abscissa of the center.   
+    /** Devuelve la abscisa del centro del Circle. 
+     *  @return int, la abscisa.   
      */
     public int getCenterX() { return centerX; }  
 
-    /** Return ordenate of the center of Circle. 
-     *  @return int, the ordenate of the center.  
+    /** Devuelve la ordenada del centro del Circle. 
+     *  @return int, la ordenada.   
      */
     public int getCenterY() { return centerY; }
  
-    /** Update radius of Circle to newRadius. 
-     *  @param newRadius double the new radius.  
+    /** Actualiza el radio del Circle a nuevoRadio. 
+     *  @param nuevoRadio double que representa el nuevo radio.
      */
-    public void setRadius(double newRadius) { radius = newRadius; }   
+    public void setRadius(double nuevoRadio) { radius = nuevoRadio; }   
 
-    /** Update color of Circle to newColor. 
-     *  @param newColor String the new color.  
+    /** Actualiza el color del Circle a nuevoColor. 
+     *  @param nuevoColor String que representa el nuevo color.
      */
-    public void setColor(String newColor) { color = newColor; }   
+    public void setColor(String nuevoColor) { color = nuevoColor; }   
  
-    /** Update center of Circle to position (cx,cy). 
-     *  @param cx int the new abscissa of the center.
-     *  @param cy int the new ordenate of the center.
+    /** Actualiza el centro del Circle a la posición (cx,cy). 
+     *  @param cx int que representa la nueva abscisa del centro.
+     *  @param cx int que representa la nueva ordenada del centro.
      */
     public void setCenter(int cx, int cy) { centerX = cx; centerY = cy; }
     
-    /** Calculate area of Circle.
-     *  @return double, the area.  
+    /** Devuelve el área del Circle.
+     *  @return double, el área.  
      */
     public double area() { return Math.PI * radius * radius; }
     
-    /** Calculate perimeter of Circle.
-     *  @return double, the perimeter. 
+    /** Devuelve el perímetro del Circle.
+     *  @return double, el perímetro.  
      */
     public double perimeter() { return 2 * Math.PI * radius; }
     
-    /** Return a String with the components of Circle. 
-     *  @return String, the components.   
+    /** Devuelve un String con los datos del Circle. 
+     *  @return String, los datos. 
      */
     public String toString() { 
-        String res = "Circle of radius " + radius;
+        String res = "Círculo de radio " + radius;
         res += ", color " + color;
-        res += " and center (" + centerX + "," + centerY + ")";
+        res += " y centro (" + centerX + "," + centerY + ")";
         return res; 
     }
-        
-} // of Circle
+
+} // de Circle
