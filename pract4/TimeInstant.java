@@ -131,14 +131,7 @@ public class TimeInstant {
       // TO COMPLETE
       
       public int compareTo(TimeInstant tInstant) {
-        // comparing hours first
-        if (this.hours < tInstant.hours) return -1;
-        if (this.hours > tInstant.hours) return 1;
-        // if hours are same, then compare minutes
-        if (this.minutes < tInstant.minutes) return -1;
-        if (this.minutes > tInstant.minutes) return 1;
-        // if both hours and minutes are same
-        return 0;
+        return this.toMinutes() - tInstant.toMinutes();
     }
       
 
